@@ -1,4 +1,4 @@
-// Form Validation
+/* Form Validation
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -25,6 +25,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     alert("Thank you for reaching out! We'll get back to you soon.");
     this.reset();
 });
+*/
 
 // Back to Top Button Logic
 const backToTopButton = document.getElementById("back-to-top");
