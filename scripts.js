@@ -1,5 +1,5 @@
 // Form Validation
-//document.getElementById("contact-form").addEventListener("submit", function(event) {
+document.getElementById("contact-form").addEventListener("submit", function(event) {
     //event.preventDefault();
 
     const name = this.querySelector("input[type='text']").value.trim();
@@ -60,7 +60,7 @@ hamburger.addEventListener("click", () => {
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('/Wall-Street/sw.js')
         .then(reg => console.log("Service Worker registered"))
         .catch(err => console.log("Service Worker failed", err));
     });
