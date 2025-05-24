@@ -485,6 +485,18 @@ header .logo h1 {
     transition: color 0.3s;
 }
 
+/* Remove link styles for the logo */
+header .logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .logo:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 header .logo:hover h1 {
     color: #f00;
 }
@@ -551,5 +563,58 @@ header nav ul li a:hover::after {
     header nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+#nav-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-menu {
+        display: none;
+        width: 100%;
+        background: #000;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    #nav-menu.show {
+        display: block;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-menu ul li {
+        margin: 10px 0;
     }
 }
