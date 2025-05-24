@@ -1,6 +1,6 @@
-/* Form Validation
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+// Form Validation
+//document.getElementById("contact-form").addEventListener("submit", function(event) {
+    //event.preventDefault();
 
     const name = this.querySelector("input[type='text']").value.trim();
     const email = this.querySelector("input[type='email']").value.trim();
@@ -25,7 +25,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     alert("Thank you for reaching out! We'll get back to you soon.");
     this.reset();
 });
-*/
+
 
 // Back to Top Button Logic
 const backToTopButton = document.getElementById("back-to-top");
