@@ -137,10 +137,10 @@
     <div class="container">
         <h2>Contact Us</h2>
         <p>Ready to join the competition or have a question? Get in touch with us!</p>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form id="contact-form" action="https://formspree.io/f/xwpodeel" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit" class="cta-button">Send Message</button>
         </form>
     </div>
