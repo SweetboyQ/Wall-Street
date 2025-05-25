@@ -50,22 +50,42 @@ window.addEventListener("scroll", () => {
 });
 
 // Mobile Menu Toggle
-const hamburger = document.getElementById("hamburger");
+/*const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("show");
     hamburger.classList.toggle("active");
-});
+});*/
 
 
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/Wall-Street/sw.js')
+        navigator.serviceWorker.register('/Wall-Street/sw.js')
+
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+            hamburger.classList.toggle("active");
+});
         .then(reg => console.log("Service Worker registered"))
         .catch(err => console.log("Service Worker failed", err));
     });
-}
+}*/
+
+window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/Wall-Street/sw.js')
+    
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        hamburger.classList.toggle("active");
+    });
+});
 
 // Close menu when a nav link is clicked
 document.querySelectorAll('#nav-menu a').forEach(link => {
