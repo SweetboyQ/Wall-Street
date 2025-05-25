@@ -65,5 +65,13 @@ if ('serviceWorker' in navigator) {
         .then(reg => console.log("Service Worker registered"))
         .catch(err => console.log("Service Worker failed", err));
     });
-  }
+}
+
+// Close menu when a nav link is clicked
+document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+      hamburger.classList.remove('active');
+    });
+});
   
